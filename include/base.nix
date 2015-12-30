@@ -39,6 +39,7 @@
     cpufrequtils
     zip
     unzip
+    usbutils
   ];
 
 }
