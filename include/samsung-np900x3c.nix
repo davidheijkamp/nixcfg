@@ -21,17 +21,12 @@
   hardware = {
     opengl.driSupport32Bit = true;
     enableAllFirmware = true;
-    # firmware = [ "/root/firmware" ];
     bluetooth.enable = false;
   };
 
   services.xserver = {
     vaapiDrivers = [ pkgs.vaapiIntel ];
     videoDrivers = [ "intel" ];
-
-    xkbOptions = "grp:alt_space_toggle, ctrl:swapcaps, grp_led:caps";
-
-    multitouch.enable = true;
 
     synaptics = {
       enable = true;
@@ -45,7 +40,7 @@
         Option "FingerPress"               "30"
         Option "MaxTapTime"                "100"
         Option "MaxDoubleTapTime"          "150"
-        Option "FastTaps"                  "0"
+        Option "FastTaps"                  "1"
         Option "VertTwoFingerScroll"       "1"
         Option "HorizTwoFingerScroll"      "1"
         Option "TrackstickSpeed"           "0"
