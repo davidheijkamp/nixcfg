@@ -11,6 +11,9 @@
     atom
     kde5.kwrited
     kde5.ksnapshot
+    scribus
+    ghostscript
+    transmission
   ];
 
   nixpkgs.config = {
