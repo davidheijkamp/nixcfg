@@ -19,7 +19,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   hardware = {
-    opengl.videoDrivers = [ "intel" ];
     opengl.driSupport32Bit = true;
     enableAllFirmware = true;
     # firmware = [ "/root/firmware" ];
@@ -28,6 +27,7 @@
 
   services.xserver = {
     vaapiDrivers = [ pkgs.vaapiIntel ];
+    videoDrivers = [ "intel" ];
 
     xkbOptions = "grp:alt_space_toggle, ctrl:swapcaps, grp_led:caps";
 

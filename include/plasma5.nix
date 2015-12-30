@@ -4,7 +4,6 @@
   services.xserver = {
     enable = true;
     layout = "us,nl";
-    startOpenSSHAgent = true;
 
     desktopManager = {
       kde5.enable = true;
@@ -14,6 +13,8 @@
       sddm.enable = true;
     };
   };
+
+  programs.ssh.startAgent = true;
 
   # Enable PulseAudio
   hardware.pulseaudio.enable = true;
