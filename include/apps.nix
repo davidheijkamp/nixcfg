@@ -11,6 +11,7 @@
     atom
     kde5.kwrited
     kde5.ksnapshot
+    kde5.okular
     scribus
     ghostscript
     transmission
