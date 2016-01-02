@@ -8,7 +8,13 @@
 
   networking = {
     networkmanager.enable = true;
+    firewall = {
+      enable = true;
+      allowedUDPPortRanges = [ { from = 32768; to = 61000; } ];
+    };
   };
+
+
 
   # Programs
   programs.zsh.enable = true;

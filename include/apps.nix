@@ -6,15 +6,18 @@
   environment.systemPackages = with pkgs; [
     firefoxWrapper
     chromium
+    vlc
     tomahawk
     beets
     atom
     kde5.kwrited
     kde5.ksnapshot
-    kde5.okular
     scribus
     ghostscript
+    imagemagick
     transmission
+    transmission_gtk
+    keepassx2
   ];
 
   nixpkgs.config = {
